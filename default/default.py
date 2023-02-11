@@ -24,7 +24,7 @@ _C.model.basenet.version = 'resnet101'
 _C.data = CN()
 _C.data.source = CN()
 _C.data.source.name = 'gta5'
-_C.data.source.rootpath = 'dataset/GTA5'
+_C.data.source.rootpath = '/kaggle/input/gtav-dataset/GTAV'
 _C.data.source.imagepath = None # 默认为空，否则使用该路径下的图片
 _C.data.source.split = 'all'
 _C.data.source.img_rows = 1052
@@ -54,7 +54,7 @@ _C.data.source.num_workers = 1
 # target train dataset config
 _C.data.target = CN()
 _C.data.target.name = 'cityscapes'
-_C.data.target.rootpath = 'dataset/CityScape'
+_C.data.target.rootpath = '/kaggle/input/cityscapes/Cityspaces'
 _C.data.target.labelpath = None # 伪标签路径，默认空则使用gt
 _C.data.target.split = 'train'
 _C.data.target.img_rows = 1024

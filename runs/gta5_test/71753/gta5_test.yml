@@ -10,7 +10,7 @@ model:
 data:
     target:
         name: cityscapes
-        rootpath: /kaggle/input/cityscapes/Cityspaces
+        rootpath: dataset/CityScape
         split: train
         img_rows: 1024
         img_cols: 2048
